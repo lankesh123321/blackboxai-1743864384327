@@ -1,0 +1,57 @@
+/* Custom styles for the Wingo Lottery game */
+
+/* Animation for number balls when selected */
+.number-ball {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.number-ball.selected {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+    background-color: #3b82f6 !important;
+    color: white !important;
+}
+
+/* Button hover effects */
+button:hover {
+    transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    .number-ball {
+        width: 40px;
+        height: 40px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Custom blue theme enhancements */
+.bg-blue-50 {
+    background-color: #eff6ff;
+}
+.bg-blue-100 {
+    background-color: #dbeafe;
+}
+.bg-blue-600 {
+    background-color: #2563eb;
+}
+.bg-blue-800 {
+    background-color: #1e40af;
+}
+.text-blue-700 {
+    color: #1d4ed8;
+}
+.border-blue-400 {
+    border-color: #60a5fa;
+}
+.hover\:bg-blue-200:hover {
+    background-color: #bfdbfe;
+}
